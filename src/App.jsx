@@ -1,4 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import 'bootstrap/dist/css/bootstrap.min.css';
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Home from "./components/Home";
@@ -10,11 +11,12 @@ import CardList2 from "./components/NaivashaCards";
 import CardList3 from "./components/DianiCards";
 import CardList4 from "./components/MalindiCards";
 import CardList5 from "./components/MombasaCards";
+import CardList6 from "./components/SamburuCards";
 
 const App = () => {
  
   return (
-   <Router>
+    <Router>
     <Navbar />
     <Routes>
     <Route path="/blog" element={<Card />} />
@@ -25,13 +27,12 @@ const App = () => {
     <Route path="/Diani" element={<CardList3 />} />
     <Route path="/Malindi" element={<CardList4 />} />
     <Route path="/Mombasa" element={<CardList5 />} />
-    
-
+    <Route path="/Samburu" element={<CardList6 />} />
     </Routes>
-   <Footer />
-   </Router>
+    <Footer />
+    </Router>
 
-  )
-}
+  );
+};
 export default App;
 

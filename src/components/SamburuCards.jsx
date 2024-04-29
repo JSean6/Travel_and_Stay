@@ -1,6 +1,5 @@
 import React from 'react';
 
-
 const styles = {
   cardContainer: {
     display: 'flex',
@@ -63,13 +62,13 @@ const Card = ({ imageUrl, title, price, duration }) => {
   );
 };
 
-const CardList3 = () => {
+const CardList6 = () => {
   const cardsData = [
-    { imageUrl: '/src/assets/Diani.jpg' , title: 'WILDLIFE/SAFARI TOURISM PACKAGE', price: '32,999.00', duration: "3 DAYS / 2 NIGHTS" },
-    { imageUrl: '/src/assets/Diani2.jpg' , title: 'ADVENTURE TOURISM PACKAGE', price: '53,000.00', duration: "4 DAYS / 3 NIGHTS" },
-    { imageUrl: '/src/assets/diani3.jpg' , title: '2024 DEALS', price: '57,000.00', duration: "5 DAYS / 4 NIGHTS" },
-    { imageUrl: '/src/assets/Diani4.jpg' , title: 'HONEYMOON TOURISM PACKAGE', price: '50,000.00', duration: "4 DAYS / 3 NIGHTS" },
-    { imageUrl: '/src/assets/Diani5.jpg' , title: 'GUESTHOUSE TOURISM PACKAGE', price: '70,000.00', duration: "4 DAYS / 3 NIGHTS" }
+    { imageUrl: '/src/assets/samburu2.jpg' , title: 'BEACH GETAWAY', price: '32,999.00', duration: "3 DAYS / 2 NIGHTS" },
+    { imageUrl: '/src/assets/samburu3.jpg' , title: 'ADVENTURE TOURISM PACKAGE', price: '53,000.00', duration: "4 DAYS / 3 NIGHTS" },
+    { imageUrl: '/src/assets/samburu4.jpg' , title: '2024 DEALS', price: '57,000.00', duration: "5 DAYS / 4 NIGHTS" },
+    { imageUrl: '/src/assets/samburu5.jpg' , title: 'HONEYMOON TOURISM PACKAGE', price: '50,000.00', duration: "4 DAYS / 3 NIGHTS" },
+    { imageUrl: '/src/assets/samburu6.jpg' , title: 'GUESTHOUSE TOURISM PACKAGE', price: '70,000.00', duration: "4 DAYS / 3 NIGHTS" }
   ];
 
   return (
@@ -81,4 +80,4 @@ const CardList3 = () => {
   );
 };
 
-export default CardList3;
+export default CardList6;
