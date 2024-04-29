@@ -8,7 +8,6 @@ import Diani from '/src/assets/Diani.jpg'
 import Wildebeest from '/src/assets/wildebeest.jpg'
 import LNaivasha from '/src/assets/L.Naivasha.jpg'
 
-import Maracards from "./Maracards"
 
 const PackageCard = () => {
     return (
@@ -33,7 +32,7 @@ const PackageCard = () => {
                         </span>
                     </div>
                     <li>
-                        <Link to="/cards"><button className="font-serif bg-blue-900 text-center mt-4 text-slate-50 hover:text-gray-300 border border-orange-500 rounded-lg">VIEW MORE PACKAGES</button></Link>
+                        <Link to="/MaasaiMara"><button className="font-serif bg-blue-900 text-center mt-4 text-slate-50 hover:text-gray-300 border border-orange-500 rounded-lg">VIEW MORE PACKAGES</button></Link>
                     </li>
                 </div>
             </div>
@@ -57,7 +56,7 @@ const PackageCard = () => {
                         </span>
                     </div>
                     <li>
-                        <Link to="/cards2"><button className="font-serif bg-blue-900 text-center mt-4 text-slate-50 hover:text-gray-300 border border-orange-500 rounded-lg">VIEW MORE PACKAGES</button></Link>
+                        <Link to="/Naivasha"><button className="font-serif bg-blue-900 text-center mt-4 text-slate-50 hover:text-gray-300 border border-orange-500 rounded-lg">VIEW MORE PACKAGES</button></Link>
                     </li>
                 </div>
             </div>
@@ -104,7 +103,7 @@ const PackageCard = () => {
                         </span>
                     </div>
                     <li>
-                        <Link to="/cards3"><button className="font-serif bg-blue-900 text-center mt-4 text-slate-50 hover:text-gray-300 border border-orange-500 rounded-lg">VIEW MORE PACKAGES</button></Link>
+                        <Link to="/Diani"><button className="font-serif bg-blue-900 text-center mt-4 text-slate-50 hover:text-gray-300 border border-orange-500 rounded-lg">VIEW MORE PACKAGES</button></Link>
                     </li>
                 </div>
             </div>
@@ -149,6 +148,9 @@ const PackageCard = () => {
                             Malindi Holiday Packages
                         </span>
                     </div>
+                    <li>
+                        <Link to="/Malindi"><button className="font-serif bg-blue-900 text-center mt-4 text-slate-50 hover:text-gray-300 border border-orange-500 rounded-lg">VIEW MORE PACKAGES</button></Link>
+                    </li>
                 </div>
             </div>
         </section>

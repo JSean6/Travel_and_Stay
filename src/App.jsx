@@ -8,6 +8,7 @@ import Header from "./components/Header";
 import CardList from "./components/Maracards";
 import CardList2 from "./components/NaivashaCards";
 import CardList3 from "./components/DianiCards";
+import CardList4 from "./components/MalindiCards";
 
 const App = () => {
  
@@ -18,9 +19,11 @@ const App = () => {
     <Route path="/blog" element={<Card />} />
     <Route path="/home" element={<Home />} />
     <Route path="/about" element={<About />} />
-    <Route path="/cards" element={<CardList />} />
-    <Route path="/cards2" element={<CardList2 />} />
-    <Route path="/cards3" element={<CardList3 />} />
+    <Route path="/MaasaiMara" element={<CardList />} />
+    <Route path="/Naivasha" element={<CardList2 />} />
+    <Route path="/Diani" element={<CardList3 />} />
+    <Route path="/Malindi" element={<CardList4 />} />
+
     
 
     </Routes>
