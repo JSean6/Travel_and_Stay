@@ -71,7 +71,7 @@ const PackageCard = () => {
 
                         </p>
                         <p className="text-gray-700 text-base">
-                            Ksh: 110,000
+                            Ksh: 70,000
                         </p>
                         <p><strong>5 DAYS / 4 NIGHTS</strong></p>
                     </div>
@@ -103,6 +103,9 @@ const PackageCard = () => {
                             South Coast Packages
                         </span>
                     </div>
+                    <li>
+                        <Link to="/cards3"><button className="font-serif bg-blue-900 text-center mt-4 text-slate-50 hover:text-gray-300 border border-orange-500 rounded-lg">VIEW MORE PACKAGES</button></Link>
+                    </li>
                 </div>
             </div>
 
