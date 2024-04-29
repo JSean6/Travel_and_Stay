@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from "react-router-dom";
 import "../PackageCard.css"
 import imageSrc from '/src/assets/imageSrc.jpg'
-import Dubai from '/src/assets/dubai.jpg'
+import Malindi from '/src/assets/Malindi.jpg'
 import Mombasa from '/src/assets/mombasa.jpg'
 import Diani from '/src/assets/Diani.jpg'
 import Wildebeest from '/src/assets/wildebeest.jpg'
@@ -132,21 +132,21 @@ const PackageCard = () => {
             </div>
             <div className='card2'>
                 <div className="max-w-md mx-auto rounded-lg overflow-hidden shadow-lg">
-                    <img className="w-full" src={Dubai} class='cardimage' />
+                    <img className="w-full" src={Malindi} class='cardimage' />
                     <div className="px-6 py-4">
-                        <div className="font-bold text-xl mb-2">Dubai Holiday Packages</div>
+                        <div className="font-bold text-xl mb-2">Malindi Holiday Packages</div>
                         <p className="text-gray-700 text-base">
-                            Location: Dubai
+                            Location: Malindi
 
                         </p>
                         <p className="text-gray-700 text-base">
-                            Ksh: 55,000
+                            Ksh: 65,000
                         </p>
                         <p><strong>5 Days/ 4 Nights</strong></p>
                     </div>
                     <div className="px-6 pt-4 pb-2">
                         <span className="inline-block bg-green-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">
-                            Dubai Holiday Packages
+                            Malindi Holiday Packages
                         </span>
                     </div>
                 </div>
