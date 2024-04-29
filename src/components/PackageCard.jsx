@@ -79,6 +79,9 @@ const PackageCard = () => {
                             Tropical Island Package
                         </span>
                     </div>
+                    <li>
+                        <Link to="/Mombasa"><button className="font-serif bg-blue-900 text-center mt-4 text-slate-50 hover:text-gray-300 border border-orange-500 rounded-lg">VIEW MORE PACKAGES</button></Link>
+                    </li>
                 </div>
             </div>
             <div className="card2">

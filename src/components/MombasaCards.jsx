@@ -1,8 +1,6 @@
 import React from 'react';
-import giraffes from '/src/assets/giraffe.jpg';
-import elephant from '/src/assets/elephant.jpg';
-import lions from '/src/assets/elephant.jpg';
-import hotair from '/src/assets/hotair.jpg';
+
+
 
 const styles = {
   cardContainer: {
@@ -66,12 +64,13 @@ const Card = ({ imageUrl, title, price, duration }) => {
   );
 };
 
-const CardList = () => {
+const CardList5 = () => {
   const cardsData = [
-    { imageUrl: '/src/assets/giraffe.jpg' , title: 'WILDLIFE/SAFARI TOURISM PACKAGE', price: '12,999.00', duration: "3 DAYS / 2 NIGHTS" },
-    { imageUrl: '/src/assets/elephant.jpg' , title: 'ADVENTURE TOURISM PACKAGE', price: '33,000.00', duration: "4 DAYS / 3 NIGHTS" },
-    { imageUrl: '/src/assets/lions.jpg' , title: '2024 DEALS', price: '37,000.00', duration: "5 DAYS / 4 NIGHTS" },
-    { imageUrl: '/src/assets/hotair.jpg' , title: 'HONEYMOON TOURISM PACKAGE', price: '30,000.00', duration: "4 DAYS / 3 NIGHTS" }
+    { imageUrl: '/src/assets/mombasa2.jpg' , title: 'BEACH GETAWAY', price: '32,999.00', duration: "3 DAYS / 2 NIGHTS" },
+    { imageUrl: '/src/assets/mombasa3.jpg' , title: 'ADVENTURE TOURISM PACKAGE', price: '53,000.00', duration: "4 DAYS / 3 NIGHTS" },
+    { imageUrl: '/src/assets/mombasa4.jpg' , title: '2024 DEALS', price: '57,000.00', duration: "5 DAYS / 4 NIGHTS" },
+    { imageUrl: '/src/assets/mombasa5.jpg' , title: 'HONEYMOON TOURISM PACKAGE', price: '50,000.00', duration: "4 DAYS / 3 NIGHTS" },
+    { imageUrl: '/src/assets/mombasa6.jpg' , title: 'GUESTHOUSE TOURISM PACKAGE', price: '70,000.00', duration: "4 DAYS / 3 NIGHTS" }
   ];
 
   return (
@@ -83,4 +82,4 @@ const CardList = () => {
   );
 };
 
-export default CardList;
+export default CardList5;

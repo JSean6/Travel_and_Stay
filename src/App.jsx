@@ -9,6 +9,7 @@ import CardList from "./components/Maracards";
 import CardList2 from "./components/NaivashaCards";
 import CardList3 from "./components/DianiCards";
 import CardList4 from "./components/MalindiCards";
+import CardList5 from "./components/MombasaCards";
 
 const App = () => {
  
@@ -23,7 +24,7 @@ const App = () => {
     <Route path="/Naivasha" element={<CardList2 />} />
     <Route path="/Diani" element={<CardList3 />} />
     <Route path="/Malindi" element={<CardList4 />} />
-
+    <Route path="/Mombasa" element={<CardList5 />} />
     
 
     </Routes>

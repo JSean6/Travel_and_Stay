@@ -56,7 +56,7 @@ const Card = ({ imageUrl, title, price, duration }) => {
       <img src={imageUrl} alt={title} style={styles.image} />
       <div style={styles.info}>
         <p>{duration}</p>
-        <p>{title}</p>
+        <p className="inline-block bg-green-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">{title}</p>
         <p style={styles.price}>From: Ksh {price}</p>
         {/* <button style={styles.button}>MORE INFO</button> */}
       </div>
