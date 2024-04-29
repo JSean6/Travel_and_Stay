@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import "../PackageCard.css"
 import imageSrc from '/src/assets/imageSrc.jpg'
 import Dubai from '/src/assets/dubai.jpg'
-import Zanzibar from '/src/assets/zanzibar2.jpg'
+import Mombasa from '/src/assets/mombasa.jpg'
 import Diani from '/src/assets/Diani.jpg'
 import Wildebeest from '/src/assets/wildebeest.jpg'
 import LNaivasha from '/src/assets/L.Naivasha.jpg'
@@ -63,11 +63,11 @@ const PackageCard = () => {
             </div>
             <div className="card2">
                 <div className="max-w-md mx-auto rounded-lg overflow-hidden shadow-lg">
-                    <img className="w-full" src={Zanzibar} class='cardimage' />
+                    <img className="w-full" src={Mombasa} class='cardimage' />
                     <div className="px-6 py-4">
-                        <div className="font-bold text-xl mb-2">5 Days Zanzibar</div>
+                        <div className="font-bold text-xl mb-2">5 Days Mombasa</div>
                         <p className="text-gray-700 text-base">
-                            Location: Zanzibar
+                            Location: Mombasa
 
                         </p>
                         <p className="text-gray-700 text-base">

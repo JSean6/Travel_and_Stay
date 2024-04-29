@@ -71,9 +71,9 @@ const CardList2 = () => {
   const cardsData = [
     { imageUrl: '/src/assets/Lodge.jpg' , title: 'WILDLIFE/SAFARI TOURISM PACKAGE', price: '12,999.00', duration: "3 DAYS / 2 NIGHTS" },
     { imageUrl: '/src/assets/resort.jpg' , title: 'ADVENTURE TOURISM PACKAGE', price: '33,000.00', duration: "4 DAYS / 3 NIGHTS" },
-    { imageUrl: '/src/assets/resort.jpg' , title: '2024 DEALS', price: '37,000.00', duration: "5 DAYS / 4 NIGHTS" },
+    { imageUrl: '/src/assets/valleylodge.jpg' , title: '2024 DEALS', price: '37,000.00', duration: "5 DAYS / 4 NIGHTS" },
     { imageUrl: '/src/assets/hotel.jpg' , title: 'HONEYMOON TOURISM PACKAGE', price: '30,000.00', duration: "4 DAYS / 3 NIGHTS" },
-    { imageUrl: '/src/assets/sawelalodge.jpg' , title: 'HONEYMOON TOURISM PACKAGE', price: '50,000.00', duration: "4 DAYS / 3 NIGHTS" }
+    { imageUrl: '/src/assets/sawelalodge.jpg' , title: 'GUESTHOUSE TOURISM PACKAGE', price: '50,000.00', duration: "4 DAYS / 3 NIGHTS" }
   ];
 
   return (
