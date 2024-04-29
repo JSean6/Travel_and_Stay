@@ -1,0 +1,39 @@
+.header {
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    background-color: rgb(5, 5, 70);
+}
+
+.headerContainer {
+    width: 100%;
+    max-width: 1024px;
+    margin: 20px 0px 100px 0px;
+    display: flex;
+}
+
+.headerList {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.headerListItem {
+    border: 1px solid white;
+    padding: 10px;
+    border-radius: 20px;
+
+}
+
+.headerSearch {
+    height: 30px;
+    background-color: white;
+    border: 3px solid #febb02;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px 0px;
+    border-radius: 5px;
+    bottom: -25px;
+}
