@@ -1,16 +1,22 @@
-.main-slide {
-    padding-top: 30px;
-}
-
-.carousel .slide-wrapper {
-    width: 50%;
-}
-
-.carousel .thumb{
-    width: 5%;
-    height: 50px;
-}
-
 .carousel {
     text-align: center;
 }
+
+.img1 {
+    height: 550px;
+}
+
+.text {
+    text-align: center;
+    float: left;
+}
+
+.carousel-indicators [data-bs-target] {
+    border-radius: 100%;
+    width: 10px;
+    height: 10px;
+}
+/* 
+.carousel-control-next-icon {
+    display: none;
+} */
