@@ -12,6 +12,7 @@ import CardList3 from "./components/DianiCards";
 import CardList4 from "./components/MalindiCards";
 import CardList5 from "./components/MombasaCards";
 import CardList6 from "./components/SamburuCards";
+import BookingPage from "./components/BookingPage";
 
 const App = () => {
  
@@ -28,6 +29,7 @@ const App = () => {
     <Route path="/Malindi" element={<CardList4 />} />
     <Route path="/Mombasa" element={<CardList5 />} />
     <Route path="/Samburu" element={<CardList6 />} />
+    <Route path="/booking" element={<BookingPage />} />
     </Routes>
     <Footer />
     </Router>

@@ -1,8 +1,5 @@
 import React from 'react';
-import giraffes from '/src/assets/giraffe.jpg';
-import elephant from '/src/assets/elephant.jpg';
-import lions from '/src/assets/elephant.jpg';
-import hotair from '/src/assets/hotair.jpg';
+import { useNavigate } from 'react-router-dom';
 
 const styles = {
   cardContainer: {
@@ -53,6 +50,12 @@ const styles = {
 };
 
 const Card = ({ imageUrl, title, price, duration }) => {
+  const navigate = useNavigate();
+  
+  const handleMoreInfo = () => {
+    navigate("/booking", { state: { imageUrl, title, price, duration } });
+  };
+
   return (
     <div style={styles.card}>
       <img src={imageUrl} alt={title} style={styles.image} />
@@ -60,7 +63,7 @@ const Card = ({ imageUrl, title, price, duration }) => {
         <p>{duration}</p>
         <p className="inline-block bg-green-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">{title}</p>
         <p style={styles.price}>From: Ksh {price}</p>
-        {/* <button style={styles.button}>MORE INFO</button> */}
+        <button onClick={handleMoreInfo} style={styles.button}>MORE INFO</button>
       </div>
     </div>
   );
