@@ -1,6 +1,5 @@
 import React,{useState} from 'react';
-import BookingForm from './Bookingform';
-
+import { useNavigate } from 'react-router-dom';
 
 const styles = {
   cardContainer: {
@@ -11,10 +10,11 @@ const styles = {
   card: {
     backgroundColor: '#fff',
     borderRadius: '8px',
-    width: '300px',
+    width: '350px',
     margin: '10px',
     boxShadow: '0 2px 4px rgba(0, 0, 0, 0.2)',
     position: 'relative',
+    
   },
   image: {
     width: '100%',
@@ -34,14 +34,15 @@ const styles = {
     backgroundColor: '#ffa500',
     color: '#fff',
     border: 'none',
-    padding: '',
+    padding: '0',
     borderRadius: '20px',
     cursor: 'pointer',
     position: 'absolute',
     bottom: '20px',
     left: '50%',
     transform: 'translateX(-50%)',
-    paddingTop: '2px',
+    padding: '',
+    marginTop: '30px'
   },
   duration: {
     color: 'black',
@@ -52,14 +53,17 @@ const styles = {
     color: 'black',
     fontSize: '18px',
     fontWeight: 'bold',
+    paddingBottom: '24px'
   }
 };
 
 const Card = ({ imageUrl, title, price, duration, location }) => {
 
-  const [showBookingForm, setShowBookingForm] = useState(false);
-
-  const toggleBookingForm = () => setShowBookingForm(!showBookingForm);
+  const navigate = useNavigate();
+  
+  const handleMoreInfo = () => {
+    navigate("/booking", { state: { imageUrl, title, price, duration } });
+  };
 
   return (
     <>
@@ -71,17 +75,9 @@ const Card = ({ imageUrl, title, price, duration, location }) => {
           <p className="inline-block bg-green-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">{title}</p>
           <p style={styles.price}>From: Ksh {price}</p>
           <p style={styles.location}>Location: {location}</p>
-          <button style={styles.button} onClick={toggleBookingForm}>Book Now</button>
+          <button onClick={handleMoreInfo} style={styles.button}>BOOK NOW</button>
         </div>
       </div>
-      {showBookingForm && (
-                <BookingForm
-                    title={title}
-                    price={price}
-                    duration={duration}
-                    onClose={() => setShowBookingForm(false)}
-                />
-            )}
     </>
   );
 };

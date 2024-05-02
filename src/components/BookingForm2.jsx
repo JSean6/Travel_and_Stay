@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
+import "../BookingPage.css"
 
-const BookingForm = ({ title, price, duration }) => {
+const BookingForm2 = ({ title, price, duration, onClose }) => {
     const [startDate, setStartDate] = useState('');
     const [endDate, setEndDate] = useState('');
     const [adults, setAdults] = useState(1);
@@ -22,11 +23,38 @@ const BookingForm = ({ title, price, duration }) => {
         setTotalPrice(total.toFixed(2));
     }, [adults, children, price]);
 
+    const handleSubmit = (event) => {
+        event.preventDefault();
+        alert(`Booking Submitted!\n\nDetails:\n - Trip: ${title}\n - Start Date: ${startDate}\n - End Date: ${endDate}\n - Adults: ${adults}\n - Children: ${children}\n - Total Price: Ksh ${totalPrice}`);
+        // Reset Form or Close Form Logic Here
+        setStartDate('');
+        setEndDate('');
+        setAdults(1);
+        setChildren(0);
+        if (onClose) onClose(); // If there's a callback to close the form
+    };
+
+
     return (
-        <div className="bg-white p-5 rounded-lg shadow-lg max-w-md">
+        // <div style={{
+        //     height: '190vh',
+        //     backgroundImage: 'url("/src/assets/resort.jpg")',
+        //     backgroundSize: 'cover',
+        // }}>
+        <div style={{
+                fontFamily: 'monospace',
+                margin: 0,
+                padding: 0,
+                justifyContent: 'center',
+                alignItems: 'center',
+                // height: '100vh'
+        }}>
+        <form className="" onSubmit={handleSubmit} id='form'>
             <h2 className="text-xl font-bold mb-4">Booking: {title}</h2>
+            <h2 className="text-xl font-bold mb-4">Duration: {duration}</h2>
+            <h2 className="text-xl font-bold mb-4">Price per person: {price}</h2>
             <div className="mb-4">
-                <label className="block">Start Date</label>
+                <label className="block">Select Start Date</label>
                 <input type="date" value={startDate} onChange={e => setStartDate(e.target.value)} className="w-full border-gray-300 rounded-md p-2"/>
             </div>
             <div className="mb-4">
@@ -44,8 +72,13 @@ const BookingForm = ({ title, price, duration }) => {
             <div className="mb-4">
                 <p><strong>Total Price:</strong> Ksh {totalPrice}</p>
             </div>
+            <button type="submit" className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                Submit Booking
+            </button>
+        </form>
         </div>
+        // </div>
     );
 };
 
-export default BookingForm;
+export default BookingForm2;

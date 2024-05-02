@@ -1,0 +1,58 @@
+form {
+    margin-top: 265px;
+    height: 600px;
+    width: 500px;
+    background-color: rgba(255,255,255,0.13);
+    position: relative;
+    transform: translate(-50%,-50%);
+    border-radius: 10px;
+    top: 50%;
+    left: 50%;
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255,255,255,0.1);
+    padding: 50px, 35px;
+    box-shadow: 10 10 40px rgba(8,7,16,0.6);
+  }
+  
+  .title {
+    color: black;
+  }
+
+.book {
+    font-family: monospace;
+    background-image: url("C:\Users\Admin\software_dev\react_projects\Travel_and_Stay\src\assets\resort.jpg");
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    height: 190vh;
+    text-transform: uppercase;
+  }
+  
+  
+  h2 {
+    text-align: center;
+  }
+  
+  .input-group {
+    padding: 30px;
+    
+  }
+  
+  .input-group label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+ 
+  
+  
+  
