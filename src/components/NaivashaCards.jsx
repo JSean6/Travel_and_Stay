@@ -71,8 +71,7 @@ const Card = ({ imageUrl, name, title, price, duration, location }) => {
 
   return (
     <>
-     
-      <div style={styles.card}>
+     <div style={styles.card}>
         <img src={imageUrl} alt={title} style={styles.image} />
         <div style={styles.info}>
           <p style={styles.name}>{name}</p>
