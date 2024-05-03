@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from 'react-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
-// import "react-responsive-carousel/lib/styles/carousel.min.css";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 import maasaimara from '/src/assets/maasai-mara.jpg'
 import diani from '/src/assets/maldives.jpg'
 import dubai from '/src/assets/Dubai2.jpg'
