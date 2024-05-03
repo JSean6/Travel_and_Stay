@@ -1,8 +1,7 @@
 import React from "react";
 import ReactDOM from 'react-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import "react-responsive-carousel/lib/styles/carousel.min.css";
-// import { Carousel } from 'react-responsive-carousel';
+// import "react-responsive-carousel/lib/styles/carousel.min.css";
 import maasaimara from '/src/assets/maasai-mara.jpg'
 import diani from '/src/assets/maldives.jpg'
 import dubai from '/src/assets/Dubai2.jpg'
@@ -44,28 +43,3 @@ function Slider () {
 };
 
 export default Slider;
-
-//  <>
-//              <Carousel className="main-slide">
-//                 <div>
-//                     <img src={maasaimara} />
-//                     <p className="legend">Legend 1</p>
-//                 </div>
-//                 <div>
-//                     <img src={diani} />
-//                     <p className="legend">Legend 2</p>
-//                 </div>
-//                 <div>
-//                     <img src={dubai} />
-//                     <p className="legend">Legend 3</p>
-//                 </div>
-//                 <div>
-//                     <img src={zanzibar} /> 
-//                     <p className="legend">Legend 3</p>
-//                 </div>
-//                 <div>
-//                     <img src={travel} />
-//                     <p className="legend">Legend 3</p>
-//                 </div>
-//             </Carousel>
-//         </>
