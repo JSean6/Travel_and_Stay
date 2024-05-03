@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import "../BookingPage.css"
 
-const BookingForm2 = ({ title, price, duration, onClose }) => {
+const BookingForm = ({ title, name, price, duration, onClose }) => {
     const [startDate, setStartDate] = useState('');
     const [endDate, setEndDate] = useState('');
     const [adults, setAdults] = useState(1);
@@ -25,7 +25,7 @@ const BookingForm2 = ({ title, price, duration, onClose }) => {
 
     const handleSubmit = (event) => {
         event.preventDefault();
-        alert(`Booking Submitted!\n\nDetails:\n - Trip: ${title}\n - Start Date: ${startDate}\n - End Date: ${endDate}\n - Adults: ${adults}\n - Children: ${children}\n - Total Price: Ksh ${totalPrice}`);
+        alert(`Booking Submitted!\n\nDetails:\n - Trip: ${title}\n - Check in Date: ${startDate}\n - Check out Date: ${endDate}\n - Adults: ${adults}\n - Children: ${children}\n - Total Price: Ksh ${totalPrice}`);
         // Reset Form or Close Form Logic Here
         setStartDate('');
         setEndDate('');
@@ -36,11 +36,6 @@ const BookingForm2 = ({ title, price, duration, onClose }) => {
 
 
     return (
-        // <div style={{
-        //     height: '190vh',
-        //     backgroundImage: 'url("/src/assets/resort.jpg")',
-        //     backgroundSize: 'cover',
-        // }}>
         <div style={{
                 fontFamily: 'monospace',
                 margin: 0,
@@ -51,14 +46,15 @@ const BookingForm2 = ({ title, price, duration, onClose }) => {
         }}>
         <form className="" onSubmit={handleSubmit} id='form'>
             <h2 className="text-xl font-bold mb-4">Booking: {title}</h2>
+            <h2 className="text-xl font-bold mb-4">Hotel: {name}</h2>
             <h2 className="text-xl font-bold mb-4">Duration: {duration}</h2>
             <h2 className="text-xl font-bold mb-4">Price per person: {price}</h2>
             <div className="mb-4">
-                <label className="block">Select Start Date</label>
+                <label className="block">Select Check in Date:</label>
                 <input type="date" value={startDate} onChange={e => setStartDate(e.target.value)} className="w-full border-gray-300 rounded-md p-2"/>
             </div>
             <div className="mb-4">
-                <label className="block">End Date</label>
+                <label className="block">Check out Date:</label>
                 <input type="text" value={endDate} readOnly className="w-full border-gray-300 rounded-md p-2 bg-gray-100"/>
             </div>
             <div className="mb-4">
@@ -81,4 +77,4 @@ const BookingForm2 = ({ title, price, duration, onClose }) => {
     );
 };
 
-export default BookingForm2;
+export default BookingForm;
