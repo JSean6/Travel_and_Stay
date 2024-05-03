@@ -45,7 +45,6 @@ const styles = {
     bottom: '0px',
     left: '50%',
     transform: 'translateX(-50%)',
-    padding: '',
     marginTop: '30px'
   },
   duration: {
