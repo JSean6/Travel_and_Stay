@@ -1,4 +1,5 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const styles = {
   cardContainer: {
@@ -48,17 +49,26 @@ const styles = {
   }
 };
 
-const Card = ({ imageUrl, title, price, duration }) => {
+const Card = ({ imageUrl, name, title, price, duration, location }) => {
+
+  const navigate = useNavigate();
+  
+  const handleMoreInfo = () => {
+    navigate("/booking", { imageUrl, name, title, price, duration, location } });
+  };
+
   return (
     <div style={styles.card}>
-      <img src={imageUrl} alt={title} style={styles.image} />
-      <div style={styles.info}>
-        <p>{duration}</p>
-        <p className="inline-block bg-green-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">{title}</p>
-        <p style={styles.price}>From: Ksh {price}</p>
-        {/* <button style={styles.button}>MORE INFO</button> */}
+        <img src={imageUrl} alt={title} style={styles.image} />
+        <div style={styles.info}>
+          <p style={styles.name}>{name}</p>
+          <p style={styles.duration}>{duration}</p>
+          <p className="inline-block bg-green-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">{title}</p>
+          <p style={styles.price}>From: Ksh {price}</p>
+          <p style={styles.location}>Location: {location}</p>
+          <button onClick={handleMoreInfo} style={styles.button}>BOOK NOW</button>
+        </div>
       </div>
-    </div>
   );
 };
 

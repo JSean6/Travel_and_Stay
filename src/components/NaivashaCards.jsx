@@ -25,6 +25,10 @@ const styles = {
   info: {
     padding: '20px',
   },
+  name: {
+    color: 'black',
+    fontSize: '18px'
+  },
   price: {
     color: 'black',
     fontSize: '18px',
@@ -35,10 +39,10 @@ const styles = {
     color: '#fff',
     border: 'none',
     padding: '0',
-    borderRadius: '20px',
+    borderRadius: '8px',
     cursor: 'pointer',
     position: 'absolute',
-    bottom: '20px',
+    bottom: '0px',
     left: '50%',
     transform: 'translateX(-50%)',
     padding: '',
@@ -57,12 +61,12 @@ const styles = {
   }
 };
 
-const Card = ({ imageUrl, title, price, duration, location }) => {
+const Card = ({ imageUrl, name, title, price, duration, location }) => {
 
   const navigate = useNavigate();
   
   const handleMoreInfo = () => {
-    navigate("/booking", { state: { imageUrl, title, price, duration } });
+    navigate("/booking", { state: { imageUrl, name, title, price, duration } });
   };
 
   return (
@@ -71,7 +75,8 @@ const Card = ({ imageUrl, title, price, duration, location }) => {
       <div style={styles.card}>
         <img src={imageUrl} alt={title} style={styles.image} />
         <div style={styles.info}>
-          <p>{duration}</p>
+          <p style={styles.name}>{name}</p>
+          <p style={styles.duration}>{duration}</p>
           <p className="inline-block bg-green-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">{title}</p>
           <p style={styles.price}>From: Ksh {price}</p>
           <p style={styles.location}>Location: {location}</p>
@@ -84,17 +89,17 @@ const Card = ({ imageUrl, title, price, duration, location }) => {
 
 const CardList2 = () => {
   const cardsData = [
-    { imageUrl: '/src/assets/Lodge.jpg', title: 'WILDLIFE/SAFARI TOURISM PACKAGE', price: '12,999.00', duration: "3 DAYS / 2 NIGHTS", location: "Naivasha" },
-    { imageUrl: '/src/assets/resort.jpg', title: 'ADVENTURE TOURISM PACKAGE', price: '33,000.00', duration: "4 DAYS / 3 NIGHTS", location: "Naivasha"  },
-    { imageUrl: '/src/assets/valleylodge.jpg', title: '2024 DEALS', price: '37,000.00', duration: "5 DAYS / 4 NIGHTS", location: "Naivasha"  },
-    { imageUrl: '/src/assets/hotel.jpg', title: 'HONEYMOON TOURISM PACKAGE', price: '30,000.00', duration: "4 DAYS / 3 NIGHTS", location: "Naivasha"  },
-    { imageUrl: '/src/assets/sawelalodge.jpg', title: 'GUESTHOUSE TOURISM PACKAGE', price: '50,000.00', duration: "4 DAYS / 3 NIGHTS", location: "Naivasha"  }
+    { imageUrl: '/src/assets/Lodge.jpg', name: 'Chui Lodge', title: 'WILDLIFE/SAFARI TOURISM PACKAGE', price: '12,999.00', duration: "3 DAYS / 2 NIGHTS", location: "Naivasha" },
+    { imageUrl: '/src/assets/resort.jpg', name: 'Enashipai Resort', title: 'ADVENTURE TOURISM PACKAGE', price: '33,000.00', duration: "4 DAYS / 3 NIGHTS", location: "Naivasha"  },
+    { imageUrl: '/src/assets/valleylodge.jpg', name: 'Great Rift Valley Lodge & Golf', title: '2024 DEALS', price: '37,000.00', duration: "5 DAYS / 4 NIGHTS", location: "Naivasha"  },
+    { imageUrl: '/src/assets/hotel.jpg', name: 'Lake Naivasha Sopa', title: 'HONEYMOON TOURISM PACKAGE', price: '30,000.00', duration: "4 DAYS / 3 NIGHTS", location: "Naivasha"  },
+    { imageUrl: '/src/assets/sawelalodge.jpg', name: 'Sawela Lodge', title: 'GUESTHOUSE TOURISM PACKAGE', price: '50,000.00', duration: "4 DAYS / 3 NIGHTS", location: "Naivasha"  }
   ];
 
   return (
     <div style={styles.cardContainer}>
       {cardsData.map((card, index) => (
-        <Card key={index} imageUrl={card.imageUrl} title={card.title} price={card.price} duration={card.duration} location={card.location} />
+        <Card key={index} imageUrl={card.imageUrl} name={card.name} title={card.title} price={card.price} duration={card.duration} location={card.location} />
       ))}
     </div>
   );
