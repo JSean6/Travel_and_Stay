@@ -14,7 +14,7 @@ const BookingForm = ({ title, name, price, duration, onClose }) => {
             const formattedDate = new Date(startDate);
             const durationDays = parseInt(duration.split(' ')[0]); // "X DAYS / Y NIGHTS"
             const end = new Date(start.setDate(start.getDate() + durationDays));
-            setEndDate(end.toDateString().toUpperCase().split('T')[0]);
+            setEndDate(end.toDateString().split('T')[0]);
         }
     }, [startDate, duration]);
 
