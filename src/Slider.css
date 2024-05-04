@@ -2,9 +2,6 @@
     text-align: center;
 }
 
-.img1 {
-    height: 550px;
-}
 
 .text {
     text-align: center;
@@ -19,4 +16,47 @@
 
 .carousel-control-next-icon {
     display: none;
+}
+
+/* Style for images within Carousel */
+.img1 {
+    filter: grayscale(30%); /* Apply grayscale effect (adjust percentage as needed) */
+    width: 100%;
+    height: 700px;
+}
+
+/* Style for Carousel captions at top left */
+.captionTopLeft {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: white;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+}
+
+/* Style for "More Info" button */
+.moreInfoButton {
+    background-color: #054283;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 12px;
+}
+
+/* Transition effect div below the Carousel */
+.transitionEffect {
+    height: 100px; /* Adjust height as needed */
+    background-color: rgba(255, 255, 255, 0.5); /* Lightly applied white paint effect with reduced opacity */
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333; /* Text color for the transition effect */
+    text-transform: uppercase;
+    border-top: 2px solid #ccc; /* Optional: Add a border for separation */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
+    transition: background-color 0.3s ease; /* Smooth transition effect */
 }

@@ -11,9 +11,10 @@ const BookingForm = ({ title, name, price, duration, onClose }) => {
     useEffect(() => {
         if (startDate) {
             const start = new Date(startDate);
+            const formattedDate = new Date(startDate);
             const durationDays = parseInt(duration.split(' ')[0]); // "X DAYS / Y NIGHTS"
             const end = new Date(start.setDate(start.getDate() + durationDays));
-            setEndDate(end.toISOString().split('T')[0]);
+            setEndDate(end.toDateString().toUpperCase().split('T')[0]);
         }
     }, [startDate, duration]);
 
@@ -25,7 +26,7 @@ const BookingForm = ({ title, name, price, duration, onClose }) => {
 
     const handleSubmit = (event) => {
         event.preventDefault();
-        alert(`Booking Submitted!\n\nDetails:\n - Trip: ${title}\n - Check in Date: ${startDate}\n - Check out Date: ${endDate}\n - Adults: ${adults}\n - Children: ${children}\n - Total Price: Ksh ${totalPrice}`);
+        alert(`Booking Submitted!\n\nDetails:\n - Trip: ${title}\n - Start Date: ${startDate}\n - End Date: ${endDate}\n - Adults: ${adults}\n - Children: ${children}\n - Total Price: Ksh ${totalPrice}`);
         // Reset Form or Close Form Logic Here
         setStartDate('');
         setEndDate('');
@@ -34,23 +35,18 @@ const BookingForm = ({ title, name, price, duration, onClose }) => {
         if (onClose) onClose(); // If there's a callback to close the form
     };
 
+    
+    
 
     return (
-        <div style={{
-                fontFamily: 'monospace',
-                margin: 0,
-                padding: 0,
-                justifyContent: 'center',
-                alignItems: 'center',
-                // height: '100vh'
-        }}>
+        
         <form className="" onSubmit={handleSubmit} id='form'>
             <h2 className="text-xl font-bold mb-4">Booking: {title}</h2>
             <h2 className="text-xl font-bold mb-4">Hotel: {name}</h2>
             <h2 className="text-xl font-bold mb-4">Duration: {duration}</h2>
             <h2 className="text-xl font-bold mb-4">Price per person: {price}</h2>
             <div className="mb-4">
-                <label className="block">Select Check in Date:</label>
+                <label className="block">Select Check in Date</label>
                 <input type="date" value={startDate} onChange={e => setStartDate(e.target.value)} className="w-full border-gray-300 rounded-md p-2"/>
             </div>
             <div className="mb-4">
@@ -72,8 +68,8 @@ const BookingForm = ({ title, name, price, duration, onClose }) => {
                 Submit Booking
             </button>
         </form>
-        </div>
-        // </div>
+        
+      
     );
 };
 
