@@ -155,7 +155,7 @@ const PackageCard = () => {
                         </span>
                     </div>
                     <li>
-                        <Link to="/Malindi"><button className="font-serif bg-blue-900 text-center mt-4 text-slate-50 hover:text-blue-950 border border-orange-500 rounded-lg">VIEW MORE PACKAGES</button></Link>
+                        <Link to="/Malindi"><button className="bg-blue-900 text-center mt-4 text-slate-50 rounded-lg">VIEW MORE PACKAGES</button></Link>
                     </li>
                 </div>
             </div>
