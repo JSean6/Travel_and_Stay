@@ -13,7 +13,7 @@ const PackageCard = () => {
     return (
         <section>
             <div className='card2'>
-                <div className="max-w-md mx-auto rounded-lg overflow-hidden shadow-lg">
+                <div className="max-w-md mx-auto rounded-lg overflow-hidden shadow-lg ">
                     <img className="w-full" src={imageSrc} class='cardimage' />
                     <div className="px-6 py-4">
                         <div className="font-bold text-xl mb-2">Maasai Mara Safari</div>
@@ -31,9 +31,8 @@ const PackageCard = () => {
                             Wildlife/Safari Tourism Package
                         </span>
                     </div>
-                    <li>
-                        <Link to="/MaasaiMara"><button className="font-serif bg-blue-900 text-center mt-4 text-slate-50 hover:text-blue-950 border border-orange-500 rounded-lg">VIEW MORE PACKAGES</button></Link>
-                    </li>
+                    <li></li>
+                        <Link to="/MaasaiMara"><button className="font-serif bg-blue-900 text-center mt-4 text-slate-50 hover:text-orange-500 border border-orange-500 rounded-lg width-300p" id='cardbtn'>VIEW MORE PACKAGES</button></Link>
                 </div>
             </div>
             <div className="card2">
@@ -55,9 +54,9 @@ const PackageCard = () => {
                             Wildlife/Safari Tourism Package
                         </span>
                     </div>
-                    <li>
-                        <Link to="/Naivasha"><button className="font-serif bg-blue-900 text-center mt-4 text-slate-50 hover:text-blue-950 border border-orange-500 rounded-lg">VIEW MORE PACKAGES</button></Link>
-                    </li>
+                    <li></li>
+                        <Link to="/Naivasha"><button className="font-serif bg-blue-900 text-center mt-4 text-slate-50 hover:text-orange-500 border border-orange-500 rounded-lg" id='cardbtn'>VIEW MORE PACKAGES</button></Link>
+                    
                 </div>
             </div>
             <div className="card2">
@@ -79,9 +78,9 @@ const PackageCard = () => {
                             Tropical Island Package
                         </span>
                     </div>
-                    <li>
-                        <Link to="/Mombasa"><button className="font-serif bg-blue-900 text-center mt-4 text-slate-50 hover:text-blue-950 border border-orange-500 rounded-lg">VIEW MORE PACKAGES</button></Link>
-                    </li>
+                    <li></li>
+                        <Link to="/Mombasa"><button className="font-serif bg-blue-900 text-center mt-4 text-slate-50 hover:text-orange-500 border border-orange-500 rounded-lg" id='cardbtn'>VIEW MORE PACKAGES</button></Link>
+                    
                 </div>
             </div>
             <div className="card2">
@@ -105,9 +104,9 @@ const PackageCard = () => {
                             South Coast Packages
                         </span>
                     </div>
-                    <li>
-                        <Link to="/Diani"><button className="font-serif bg-blue-900 text-center mt-4 text-slate-50 hover:text-blue-950 border border-orange-500 rounded-lg">VIEW MORE PACKAGES</button></Link>
-                    </li>
+                    <li></li>
+                        <Link to="/Diani"><button className="font-serif bg-blue-900 text-center mt-4 text-slate-50 hover:text-orange-500 border border-orange-500 rounded-lg" id='cardbtn'>VIEW MORE PACKAGES</button></Link>
+                    
                 </div>
             </div>
 
@@ -130,9 +129,9 @@ const PackageCard = () => {
                             Wildlife/Safari Tourism Package
                         </span>
                     </div>
-                    <li>
-                        <Link to="/Samburu"><button className="font-serif bg-blue-900 text-center mt-4 text-slate-50 hover:text-blue-950 border border-orange-500 rounded-lg">VIEW MORE PACKAGES</button></Link>
-                    </li>
+                    <li></li>
+                        <Link to="/Samburu"><button className="font-serif bg-blue-900 text-center mt-4 text-slate-50 hover:text-orange-500 border border-orange-500 rounded-lg" id='cardbtn'>VIEW MORE PACKAGES</button></Link>
+                    
                 </div>
             </div>
             <div className='card2'>
@@ -154,9 +153,9 @@ const PackageCard = () => {
                             Malindi Holiday Packages
                         </span>
                     </div>
-                    <li>
-                        <Link to="/Malindi"><button className="bg-blue-900 text-center mt-4 text-slate-50 rounded-lg">VIEW MORE PACKAGES</button></Link>
-                    </li>
+                    <li></li>
+                        <Link to="/Malindi"><button className="bg-blue-900 text-center mt-4 text-slate-50 hover:text-orange-500 rounded-lg" id='cardbtn'>VIEW MORE PACKAGES</button></Link>
+                    
                 </div>
             </div>
         </section>

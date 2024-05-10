@@ -14,6 +14,12 @@ const Card = () => {
       height: '200px',
       objectFit: 'cover',
       borderRadius: '8px 8px 0 0',
+    },
+    title: {
+      fontSize: '26px'
+    },
+    h1: {
+      fontSize: '42px'
     }
   }
   const data = [
@@ -59,13 +65,14 @@ const Card = () => {
    <div className='card-container'>
    <div></div>
     <div className='mx-20 mt-8 bg-white rounded-lg '>
-      <h1 className='text-xl font-bold text-red '>Welcome to SavannahSunsetTours' Traveller's Blog</h1>
-    
+      <h1 className='text-xl font-bold text-orange-500' style={styles.h1}>Welcome to SavannahSunsetTours' Traveller's Blog</h1>
+      <br />
+      <br />
     </div>
-    <div className='grid grid-cols-1 sn:grid-cols-2 lg:grid-cols-2 gap-4 mx-20 mt-8 bg-white rounded-lg shadow-md p-8'>
+    <div className='grid grid-cols-1 sn:grid-cols-2 lg:grid-cols-2 gap-4 mx-20 mt-8 bg-blue-400 rounded-lg shadow-md p-8'>
       {data.map((blog) => (
         <><div key={blog.id} className='border p-4'>
-          <div className='text-xl font-bold text-red'>{blog.title}</div>
+          <div className='text-xl font-bold text-red' style={styles.title}>{blog.title}</div>
           <div><img src={blog.image} style={styles.image}/></div>
           <div className='text-gray-700 mb-4'>{blog.description}</div>
         </div>

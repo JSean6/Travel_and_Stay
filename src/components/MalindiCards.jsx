@@ -45,6 +45,7 @@ const styles = {
     left: '50%',
     transform: 'translateX(-50%)',
     paddingTop: '2px',
+    width: '300px'
   },
   duration: {
     color: 'black',
